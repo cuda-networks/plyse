@@ -5,12 +5,12 @@ from setuptools import setup
 setup(
     name='plyse',
     setup_requires = [
-    'pyparsing==2.4.0',
+    'pyparsing>=2.4.0',
     ],
     install_requires = [
-    'pyparsing==2.4.0',
+    'pyparsing>=2.4.0',
     ],
-    version='1.0.2',
+    version='1.0.3',
     url='https://github.com/sebastiandev/plyse',
     author='Sebastian Packmann',
     author_email='devsebas@gmail.com',

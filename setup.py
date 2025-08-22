@@ -14,10 +14,10 @@ def get_version(package):
 setup(
     name='plyse',
     setup_requires = [
-    'pyparsing>=2.4.1,<=2.4.7',
+    'pyparsing>=2.4.2,<=2.4.7',
     ],
     install_requires = [
-    'pyparsing>=2.4.1,<=2.4.7',
+    'pyparsing>=2.4.2,<=2.4.7',
     ],
     version='1.0.3',
     url='https://github.com/sebastiandev/plyse',

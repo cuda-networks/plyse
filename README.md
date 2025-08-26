@@ -6,6 +6,10 @@
 **Plyse** is based on [pyParsing](http://pyparsing.wikispaces.com/), it comes with a default syntax and lets you configure and extend it. There is also a default formatter for the output of the parsed query, and of course it lets you extend it to fit your needs. Every query is converted into a binary tree of operands and operators that is easy to iterate and do whatever you need to to with a user query.
 
 
+## Install
+```shell
+sudo pip install plyse
+```
 
 ## Getting started
 **Plyse** ships with defaults so you can start using it in your project immediatly. For the simplest approach, all you need to know is QueryParser and Query. So for the lazy ones:
@@ -85,10 +89,10 @@ print query.query_as_tree
 
 # [TreeNode] 'OR' operator with 2 children
 
-print query.query_as_tree.input[0]
+print query.query_as_tree.inputs[0]
 # {'field': 'name',  'field_type': 'attribute',  'val': 'peter',  'val_type': 'partial_string'}
 
-print query.query_as_tree.input[0]
+print query.query_as_tree.inputs[1]
 # {'field': 'name',  'field_type': 'attribute',  'val': 'mary',  'val_type': 'partial_string'}
 ```
 **Operators** have some extra methods you can query to find out if it supports left and right operands, the name of the Operator and so on. **Operands** can be treated as dicts.
